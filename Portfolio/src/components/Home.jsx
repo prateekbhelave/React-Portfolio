@@ -95,7 +95,7 @@ const Home = () => {
 
       {/* --------------Link Route---------------- */}
       <Routes>
-        <Route path="/about" element={<About />} />
+        <Route path="/about/*" element={<About />} />
       </Routes>
     </div>
   );

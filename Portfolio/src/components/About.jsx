@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import aboutImg from "../assets/about4.jpeg";
+import portfolio_img from "../assets/Certificate of Internship.webp";
+import internship_img from "../assets/Prateek Sadanand Bhelave.webp";
+import html_img from "../assets/Coursera HTML5 Certificate-1.webp";
+import css_img from "../assets/CertificateOfCompletion_CSS Essential Training-1.webp";
+import javascript_img from "../assets/CertificateOfCompletion_JavaScript Essential Training-1.webp";
+import wordpress_img from "../assets/CertificateOfCompletion_Become a Junior WordPress Developer-1.webp";
 import { NavLink, Route, Routes } from "react-router-dom";
 import Projects from "./Projects";
+
 import {
   RiCss3Fill,
   RiHtml5Fill,
@@ -11,50 +18,50 @@ import {
 import Certificates from "./Certificates";
 
 const About = () => {
-  const CertificatesLinks = [
-    {
-      image:
-        "src/assets/certificates/Certificate of Internship - Prateek_page-0001.webp",
-      name: "Completed my 2 months Internship of Junior WordPress Developer in Dubai based company Malard Marketing",
-      link: "https://drive.google.com/file/d/10BswzzHxRWuU7wcr-rQiHR4XNLJamMGf/view?usp=drive_link",
-    },
-    {
-      image: "src/assets/certificates/Prateek Sadanand Bhelave.webp",
-      name: "Front-End Web Development Completion Certificate",
-      link: "https://drive.google.com/file/d/106PJn1bpRmHjkAXck0a4TTvhEb9fE8Id/view?usp=drive_link",
-    },
-    {
-      image: "src/assets/certificates/Coursera HTML5 Certificate-1.webp",
-      name: "HTML5 Completion Certificate by Coursera",
-      link: "https://drive.google.com/file/d/10-wb7pMiOPp36khsDbTaYq7ifawm2oMV/view?usp=drive_link",
-    },
-    {
-      image:
-        "src/assets/certificates/CertificateOfCompletion_CSS Essential Training-1.webp",
-      name: "CSS3 Essential Completion Certificate by Coursera",
-      link: "https://drive.google.com/file/d/1-szo2F-noxVrZhoBy6riLsDJWkEuFbai/view?usp=drive_link",
-    },
-    {
-      image:
-        "src/assets/certificates/CertificateOfCompletion_JavaScript Essential Training-1.webp",
-      name: "JavaScript Essential Completion Certificate by Coursera",
-      link: "https://drive.google.com/file/d/1-z2RLKZyO1QLP2OCpAiQXBtlXrkR3MrM/view?usp=drive_link",
-    },
-    {
-      image:
-        "src/assets/certificates/CertificateOfCompletion_Become a Junior WordPress Developer-1.webp",
-      name: "Junior WordPress Developer Completion Certificate by Coursera",
-      link: "https://drive.google.com/file/d/10FP5YmeMjblHyV8Hjz3ZmUtXZv2Omkww/view?usp=drive_link",
-    },
-  ];
-  const [certificateData, setCertificateData] = useState(CertificatesLinks)
+  // const CertificatesLinks = [
+    // {
+    //   image:
+    //     "https://unsplash.com/photos/a-view-of-the-grand-canyon-from-a-plane-7m0S026jTf4",
+    //   name: "Completed my 2 months Internship of Junior WordPress Developer in Dubai based company Malard Marketing",
+    //   link: "https://drive.google.com/file/d/10BswzzHxRWuU7wcr-rQiHR4XNLJamMGf/view?usp=drive_link",
+    // },
+  //   {
+  //     image: "src/assets/Prateek Sadanand Bhelave.webp",
+  //     name: "Front-End Web Development Completion Certificate",
+  //     link: "https://drive.google.com/file/d/106PJn1bpRmHjkAXck0a4TTvhEb9fE8Id/view?usp=drive_link",
+  //   },
+  //   {
+  //     image: "src/assets/Coursera HTML5 Certificate-1.webp",
+  //     name: "HTML5 Completion Certificate by Coursera",
+  //     link: "https://drive.google.com/file/d/10-wb7pMiOPp36khsDbTaYq7ifawm2oMV/view?usp=drive_link",
+  //   },
+  //   {
+  //     image: "src/assets/CertificateOfCompletion_CSS Essential Training-1.webp",
+  //     name: "CSS3 Essential Completion Certificate by Coursera",
+  //     link: "https://drive.google.com/file/d/1-szo2F-noxVrZhoBy6riLsDJWkEuFbai/view?usp=drive_link",
+  //   },
+  //   {
+  //     image:
+  //       "src/assets/CertificateOfCompletion_JavaScript Essential Training-1.webp",
+  //     name: "JavaScript Essential Completion Certificate by Coursera",
+  //     link: "https://drive.google.com/file/d/1-z2RLKZyO1QLP2OCpAiQXBtlXrkR3MrM/view?usp=drive_link",
+  //   },
+  //   {
+  //     image:
+  //       "src/assets/CertificateOfCompletion_Become a Junior WordPress Developer-1.webp",
+  //     name: "Junior WordPress Developer Completion Certificate by Coursera",
+  //     link: "https://drive.google.com/file/d/10FP5YmeMjblHyV8Hjz3ZmUtXZv2Omkww/view?usp=drive_link",
+  //   },
+  // ];
+  // const [certificateData, setCertificateData] = useState(CertificatesLinks)
+  
 
   return (
     <div className="pt-10 text-white  min-h-[90vh]">
       {/* -----------------------About Section----------------- */}
       <div className="flex sm:flex-row flex-col-reverse items-center md:gap-5 gap-10 px-10 max-w-6xl mx-auto ">
         <div className="">
-          <div className="h-full w-[400px]">
+          <div className="h-full w-[350px] sm:w-[400px]">
             <img
               src={aboutImg}
               className="object-cover rounded-xl h-[300px] filter blur-[1px] brightness-50 "
@@ -62,13 +69,13 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="">
-          <div className="p-2">
+        <div className="p-2">
+          <div className="">
             <div className="text-gray-300 my-3">
               <h3 className="text-4xl font-semibold mb-5">
                 About <span className="primary-text">Me</span>
               </h3>
-              <p className="text-justify leading-7 w-11/12 mx-auto">
+              <p className="sm:text-justify py-1 leading-7 w-11/12 mx-auto">
                 Hi, I'm Prateek Bhelave! I'm a passionate front-end developer
                 with a knack for creating stunning and user-friendly interfaces.
                 With a degree in Computer Science, I've honed my skills in HTML,
@@ -77,7 +84,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-3 items-center gap-6 ">
+          <div className="flex mt-3 items-center gap-4 sm:gap-6 px-2">
             <div className="p-3 bg-[#333333] rounded-lg w-fit ">
               <h3 className="md:text-xl text-2xl font-semibold text-white">
                 5<span className="primary-text "> +</span>
@@ -89,7 +96,7 @@ const About = () => {
             <div className="w-fit transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt">
               <NavLink
                 to="/projects"
-                className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-6 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
+                className=" w-[190px] sm:w-[250px] h-[60px] relative inline-flex items-center justify-center px-6 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
               >
                 Projects
               </NavLink>
@@ -108,41 +115,41 @@ const About = () => {
               </h3>
 
               <div className="">
-                <h1 className="text-justify sm:text-2xl text-xl mb-2 leading-7 w-11/12 mx-auto">
+                <h1 className="sm:text-justify sm:text-2xl text-xl mb-2 sm:leading-7 w-11/12 mx-auto">
                   B.E in Computer Science
                 </h1>
-                <p className="text-justify leading-7 w-11/12 mx-auto">
+                <p className="sm:text-justify py-1 leading-7 w-11/12 mx-auto">
                   I earned my Bachelor of Engineering (BE) degree from Guru
                   Nanak Institute of Engineering and Technology Nagpur RTMNU
                   University in 2023.
                 </p>
-                <p className="text-justify leading-7 w-11/12 mx-auto">
+                <p className="sm:text-justify py-1 leading-7 w-11/12 mx-auto">
                   With the CGPA of 6.35
                 </p>
               </div>
 
               <div className="py-5">
-                <h1 className="text-justify sm:text-2xl text-xl mb-2 leading-7 w-11/12 mx-auto">
+                <h1 className="sm:text-justify py-1 sm:text-2xl text-xl mb-2 leading-7 w-11/12 mx-auto">
                   Jr. College
                 </h1>
-                <p className="text-justify leading-7 w-11/12 mx-auto">
+                <p className="sm:text-justify py-1 leading-7 w-11/12 mx-auto">
                   I have completed my HSC from Shree Gurunanak Jr. college of
                   Science and Commerce Gondia
                 </p>
-                <p className="text-justify leading-7 w-11/12 mx-auto">
+                <p className="sm:text-justify py-1 leading-7 w-11/12 mx-auto">
                   With the Percentage of 54%
                 </p>
               </div>
 
               <div className="">
-                <h1 className="text-justify sm:text-2xl text-xl mb-2 leading-7 w-11/12 mx-auto">
+                <h1 className="sm:text-justify py-1 sm:text-2xl text-xl mb-2 leading-7 w-11/12 mx-auto">
                   Higher Schooling
                 </h1>
-                <p className="text-justify leading-7 w-11/12 mx-auto">
+                <p className="sm:text-justify py-1 leading-7 w-11/12 mx-auto">
                   I have completed my SSC from Shree Gurunanak English High
                   School Gondia
                 </p>
-                <p className="text-justify leading-7 w-11/12 mx-auto">
+                <p className="sm:text-justify py-1 leading-7 w-11/12 mx-auto">
                   With the Percentage of 60%
                 </p>
               </div>
@@ -152,8 +159,7 @@ const About = () => {
       </div>
 
       {/* -------------------Skills Section------------------ */}
-      <div className="flex  sm:flex-row flex-col-reverse  md:flex-col-reverse  md:gap-5 gap-10 px-5 max-w-6xl mx-auto mt-10">
-        <div className="">
+      <div className="flex  justify-center items-center sm:flex-row flex-col-reverse  md:flex-col-reverse  md:gap-5 gap-10 px-5 max-w-6xl w-full mx-auto mt-10">
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <h3 className="text-4xl font-semibold mb-10 px-5">
@@ -161,7 +167,7 @@ const About = () => {
               </h3>
 
               <div className="sm:p-10 py-4 flex flex-wrap justify-center">
-                <h1 className="text-justify flex flex-wrap gap-8 sm:text-xl text-lg mb-2 leading-7  mx-auto">
+                <h1 className="sm:text-justify  flex flex-wrap gap-3 sm:gap-8 sm:text-xl text-lg mb-2 leading-7  mx-auto">
                   <div className="bg-zinc-400/20 p-5 rounded-lg text-center items-center flex flex-col">
                     <RiHtml5Fill color="orange" size={100} />
                     <h1>HTML5</h1>
@@ -183,7 +189,7 @@ const About = () => {
                       height="100px"
                       viewBox="-2.138 -2.29 314.9 359.304"
                       width="100px"
-                      xmlns="http://www.w3.org/2000/svg"
+                      // xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         d="m48.173 155.568c-10.389 4.887-37.886 26.886-43.182 33.404-5.5 6.518-7.129-3.666-1.426-20.572 4.48-13.647 15.888-32.183 35.034-48.07 11.202-9.166 35.849-22.405 50.921-30.146 3.056-1.63 42.571-18.332 77.809-26.683 3.056-.815-3.666 5.092-4.685 8.351-5.296 15.48-111.01 81.882-111.01 81.882zm148.894 186.78c1.833 10.999.204 11.814-11.202 13.24-11.407 1.426-19.758-2.852-22.813-5.703-3.056-2.853-3.666-9.166-.611-14.869 1.834-3.667 3.667-4.889 4.686-9.37 1.018-4.277 1.833-5.296 2.647-6.925.814-1.427 1.019-2.853 1.222-12.833.204-9.98 0-28.72 1.019-36.663 1.019-8.147 36.257 3.666 36.257 3.666s-8.352 20.776-10.592 25.868c-2.241 5.093-2.037 14.869-2.037 16.906s-.814 6.11-1.426 6.314c-.611.203 2.037 5.499.814 8.555-.815 2.852 1.833 10.185 2.036 11.814zm13.444-311.437c-1.223-7.74 0-23.018 1.629-25.461 5.093-6.926 31.979-7.74 37.683.407 2.444 3.666 2.24 12.221 1.833 17.721-.407 5.499-1.833 17.313-2.037 21.184-.203 2.852-29.738 7.332-36.256-.408-1.834-2.036-2.852-13.443-2.852-13.443zm59.884 291.679c12.425 8.963 21.998 10.592 28.312 13.851 6.314 3.26 4.685 9.574-5.907 11.407-8.555 1.629-21.998-1.63-30.96-1.63s-28.924 1.019-34.22-2.647c-6.11-4.277-3.463-12.222-3.463-12.222 1.63-4.48 5.703-14.462 4.481-22.609s-2.852-12.628-5.907-20.165c-3.055-7.536-5.295-26.071-2.443-27.09s2.036 0 5.703.814c3.666.814 7.74 2.037 15.684 2.037s16.702-1.223 19.758-1.833c3.055-.611 5.499-1.223 4.48 5.092-1.018 6.314-4.073 18.128-4.277 27.294-.203 9.166-.203 19.758.408 21.591.61 1.833 5.092 3.87 8.351 6.11z"
@@ -329,10 +335,6 @@ const About = () => {
                       <path
                         d="m215.195 58.816c5.296 3.463 18.536 6.722 22.202 7.333 3.666.814 9.573-3.87 12.425-5.092 3.056-1.426 8.352-2.241 14.462 3.259.611.611-1.426 3.259-1.426 3.259-.204-.204-1.426-.204-3.056-1.019-1.629-.814-3.055-1.426-5.499-1.222-10.185 1.222-11.814 4.685-20.776 2.647s-11.203-3.666-19.961-3.259"
                         fill="#8ac640"
-                        stroke="#010101"
-                        stroke-linejoin="round"
-                        stroke-miterlimit="10"
-                        stroke-width="1.586"
                       />
                       <path
                         d="m213.362 59.427c6.722 2.852 19.758 5.907 23.424 6.722s9.573-2.852 12.425-4.685c5.093-3.259 11.61-.611 14.666 2.852 2.036 2.24 2.852 3.666 2.852 4.277 0 .814-2.444 0-2.444 0-1.426-.611-3.056-.814-4.277-1.63-1.63-.814-3.26-2.036-5.703-1.833-10.185 1.223-12.222 4.685-20.98 2.648s-10.999-3.87-20.368-3.26"
@@ -356,19 +358,13 @@ const About = () => {
                       height="100px"
                       viewBox="0 0 48 48"
                       version="1.1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      // xmlns="http://www.w3.org/2000/svg"
+                      // xmlns:xlink="http://www.w3.org/1999/xlink"
                     >
                       <title>Wordpress-color</title>
                       <desc>Created with Sketch.</desc>
                       <defs></defs>
-                      <g
-                        id="Icons"
-                        stroke="none"
-                        stroke-width="1"
-                        fill="none"
-                        fill-rule="evenodd"
-                      >
+                      <g id="Icons" stroke="none" fill="none">
                         <g
                           id="Color-"
                           transform="translate(-400.000000, -760.000000)"
@@ -390,7 +386,7 @@ const About = () => {
                       height="100px"
                       viewBox="0 0 24 24"
                       role="img"
-                      xmlns="http://www.w3.org/2000/svg"
+                      // xmlns="http://www.w3.org/2000/svg"
                       color="blue"
                       className=""
                     >
@@ -404,16 +400,13 @@ const About = () => {
                       width="100px"
                       height="100px"
                       viewBox="0 0 50.8 50.8"
-                      xmlns="http://www.w3.org/2000/svg"
+                      // xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         d="m5.556 17.462 8.731 18.256 7.938-18.256m6.35 18.257V17.463l14.288 18.256V17.463"
                         transform="matrix(1.0498 0 0 1.0539 -.015 -2.623)"
                         fill="none"
                         stroke="#010000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="3.018"
                       />
                     </svg>
                     <h1>VN Editor</h1>
@@ -422,21 +415,142 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
 
       {/* -----------------Certificate Section---------------- */}
-      <div className="flex w-full items-start px-[10%] max-w-6xl">
+
+      <div className="flex w-full items-start px-[8%] sm:px-[10%] max-w-6xl">
         <div className="text-gray-300 my-3">
-          <h3 className="text-4xl font-semibold mb-5">
+          <h3 className="text-4xl sm:text-4xl font-semibold mb-5">
             My <span className="primary-text">Certification</span>{" "}
           </h3>
         </div>
       </div>
-      <div className="sm:flex sm:flex-wrap px-[5%]">
-          {certificateData.map((obj, index) => (
-            <Certificates key={index} data={obj}/>
-          ))}</div>
+      {/* <div className="sm:flex sm:flex-wrap px-[5%]">
+        {certificateData.map((obj, index) => (
+          <Certificates key={index} data={obj} />
+        ))}
+      </div> */}
+      <div className="w-full sm:flex sm:flex-wrap bg-erd-300 px-[4%] sm:px-[10%]">
+        <div className="sm:flex sm:flex-wrap  h-fit sm:w-[30%]  pb-5 m-2 justify-center bg-gray-400/20 align-center overflow-hidden rounded-lg">
+          <div className="w-full filter brightness-[80%] p-2">
+            <img src={portfolio_img} alt="" />
+          </div>
+          <div className="text-xl py-5 px-4">
+            <h1>
+              Completed my 2 months Internship of Junior WordPress Developer in
+              Dubai based company Malard Marketing
+            </h1>
+          </div>
+          <div className="w-fit mx-5 transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt ">
+            <a
+              href="https://drive.google.com/file/d/10BswzzHxRWuU7wcr-rQiHR4XNLJamMGf/view?usp=drive_link"
+              title="certificate"
+              role="button"
+              className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
+            >
+              See Certificate
+            </a>
+          </div>
+        </div>
+
+        <div className="sm:flex sm:flex-wrap  h-fit sm:w-[30%]  pb-5 m-2 justify-center bg-gray-400/20 align-center overflow-hidden rounded-lg">
+          <div className="w-full filter brightness-[80%] p-2">
+            <img src={internship_img} alt="" />
+          </div>
+          <div className="text-xl py-5 px-4">
+            <h1>Front-End Web Development Completion Certificate</h1>
+          </div>
+          <div className="w-fit mx-5 transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt ">
+            <a
+              href="https://drive.google.com/file/d/106PJn1bpRmHjkAXck0a4TTvhEb9fE8Id/view?usp=drive_link"
+              title="certificate"
+              role="button"
+              className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
+            >
+              See Certificate
+            </a>
+          </div>
+        </div>
+
+        <div className="sm:flex sm:flex-wrap  h-fit sm:w-[30%]  pb-5 m-2 justify-center bg-gray-400/20 align-center overflow-hidden rounded-lg">
+          <div className="w-full filter brightness-[80%] p-2">
+            <img src={html_img} alt="" />
+          </div>
+          <div className="text-xl py-5 px-4">
+            <h1>HTML5 Completion Certificate by Coursera</h1>
+          </div>
+          <div className="w-fit mx-5 transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt ">
+            <a
+              href="https://drive.google.com/file/d/10-wb7pMiOPp36khsDbTaYq7ifawm2oMV/view?usp=drive_link"
+              title="certificate"
+              role="button"
+              className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
+            >
+              See Certificate
+            </a>
+          </div>
+        </div>
+
+        <div className="sm:flex sm:flex-wrap  h-fit sm:w-[30%]  pb-5 m-2 justify-center bg-gray-400/20 align-center overflow-hidden rounded-lg">
+          <div className="w-full filter brightness-[80%] p-2">
+            <img src={css_img} alt="" />
+          </div>
+          <div className="text-xl py-5 px-4">
+            <h1>CSS3 Essential Completion Certificate by Coursera</h1>
+          </div>
+          <div className="w-fit mx-5 transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt ">
+            <a
+              href="https://drive.google.com/file/d/1-szo2F-noxVrZhoBy6riLsDJWkEuFbai/view?usp=drive_link"
+              title="certificate"
+              role="button"
+              className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
+            >
+              See Certificate
+            </a>
+          </div>
+        </div>
+
+        <div className="sm:flex sm:flex-wrap  h-fit sm:w-[30%]  pb-5 m-2 justify-center bg-gray-400/20 align-center overflow-hidden rounded-lg">
+          <div className="w-full filter brightness-[80%] p-2">
+            <img src={javascript_img} alt="" />
+          </div>
+          <div className="text-xl py-5 px-4">
+            <h1>JavaScript Essential Completion Certificate by Coursera</h1>
+          </div>
+          <div className="w-fit mx-5 transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt ">
+            <a
+              href="https://drive.google.com/file/d/1-z2RLKZyO1QLP2OCpAiQXBtlXrkR3MrM/view?usp=drive_link"
+              title="certificate"
+              role="button"
+              className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
+            >
+              See Certificate
+            </a>
+          </div>
+        </div>
+
+        <div className="sm:flex sm:flex-wrap  h-fit sm:w-[30%]  pb-5 m-2 justify-center bg-gray-400/20 align-center overflow-hidden rounded-lg">
+          <div className="w-full filter brightness-[80%] p-2">
+            <img src={wordpress_img} alt="" />
+          </div>
+          <div className="text-xl py-5 px-4">
+            <h1>
+              Junior WordPress Developer Completion Certificate by Coursera
+            </h1>
+          </div>
+          <div className="w-fit mx-5 transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt ">
+            <a
+              href="https://drive.google.com/file/d/10FP5YmeMjblHyV8Hjz3ZmUtXZv2Omkww/view?usp=drive_link"
+              title="certificate"
+              role="button"
+              className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
+            >
+              See Certificate
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* -------------Route------------- */}
       <Routes>

@@ -1,13 +1,17 @@
 import React from "react";
+import Img from "../assets/Certificate of Internship.webp";
+
+
 
 const Certificates = ({data}) => {
 
-    const {name, image, link} = data
+    const {name,image, link} = data
+
 
   return (
     <div className=" h-fit sm:w-[30%] pb-5 m-5 justify-center bg-gray-400/20 align-center overflow-hidden rounded-lg">
       <div className="w-full filter brightness-[80%]">
-        <img src={image} alt="" />
+        <img src={image}  alt="" />
       </div>
       <div className="text-xl py-5 px-4">
         <h1>{name}</h1>

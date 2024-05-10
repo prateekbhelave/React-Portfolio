@@ -1,5 +1,5 @@
 import React from 'react'
-
+import portfolio from "../assets/image.png"
 const ProjectCard = ({data}) => {
   const { name, image, desc, website_link, code_link } = data;
   return (
