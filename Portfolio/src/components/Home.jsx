@@ -64,7 +64,7 @@ const Home = () => {
           <div className="relative my-8 flex gap-5 flex-col sm:flex-row">
             <div className="w-fit transition-all duration-1000 opacity-70 -insert-px bg-gradient-to-r from-[#32f3d9] via-[#82abb3] to-[#61a1d6] rounded-lg hover:opacity-100 hover:-insert-1 hover:duration-200 animate-tilt ">
               <NavLink
-                href="/"
+                to="https://drive.google.com/file/d/1E_2hujJrfIKBbI8VQ9Ka-esTXeoIgoP1/view?usp=sharing"
                 title="Download-resume"
                 role="button"
                 className=" w-[250px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-primary font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 "
